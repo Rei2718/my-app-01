@@ -32,9 +32,9 @@ const Navigation1 = ({
   return (
     <>
       <header>
-        <div className="relative bg-fixed h-screen flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="bg-fixed h-screen flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="element">
-            <div className="relative text-brack text-center z-10 text-[#000000]">
+            <div className="text-brack text-center z-10 text-[#000000]">
 
               <Link href="/" className="text-4xl font-bold mb-4">
                   HELLOWOELD
@@ -49,18 +49,15 @@ const Navigation1 = ({
 
                 <div className="text-sm font-bold">
                   <div className="flex items-center space-x-5">
-                    <Link href="/settings/profile">
-                      <div className="relative w-10 h-10">
-                        <Image
-                          src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
-                          className="rounded-full object-cover"
-                          alt="avatar"
-                          fill
-                        />
-                      </div>
-                    </Link>
+                    <div className="relative w-10 h-10">
+                      <Image
+                        src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
+                        className="rounded-full object-cover"
+                        alt="avatar"
+                        fill
+                      />
+                    </div>
                   </div>
-                
                 </div>
               </div>
             </div>
