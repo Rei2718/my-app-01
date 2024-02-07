@@ -39,7 +39,7 @@ const Navigation1 = ({
               <Link href="/" className="text-4xl font-bold mb-4">
                   HELLOWOELD
               </Link>
-              <div className="text-lg">welcome back(更新:2024/02/08/02:05)</div>
+              <div className="text-lg">welcome back(更新:2024/02/08/02:20)</div>
 
               <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
                 
