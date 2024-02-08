@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 import type { Session } from '@supabase/auth-helpers-nextjs'
 import type { Database } from '@/lib/database.types'
+import MAIN from './MAIN/MAIN'
 type ProfileType = Database['public']['Tables']['profiles']['Row']
 
 // ナビゲーション
@@ -39,7 +40,7 @@ const Navigation1 = ({
               <Link href="/" className="text-4xl font-bold mb-4">
                   HELLOWOELD
               </Link>
-              <div className="text-lg">welcome back(更新:2024/02/08/16:55)</div>
+              <div className="text-lg">welcome back(更新:2024/02/08/17:00)</div>
 
               <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
                 
@@ -64,6 +65,7 @@ const Navigation1 = ({
           </div>
         </div>
       </header>
+      <MAIN />
     </>
   )
 }

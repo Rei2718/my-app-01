@@ -13,7 +13,7 @@ export default function MAIN() {
   };
   return (
     <>
-      <main id="content" role="main" className='width: "100vw", height: 100vh'>
+      <main id="content" role="main">
         <nav className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
           <div className="grid h-15 max-w-lg grid-cols-5 mx-auto">
             <button
