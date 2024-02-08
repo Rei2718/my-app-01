@@ -39,7 +39,7 @@ const Navigation1 = ({
           <Link href="/" className="text-4xl font-bold mb-4">
             HELLOWOELD
           </Link>
-          <div className="text-lg">welcome back</div>
+          <div className="text-lg">welcome back(最終更新(02.09/0:28))</div>
           <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
             <div className="font-bold text-xl cursor-pointer">
               {profile && profile.name ? `${profile.name}` : 'HELLO!'}
