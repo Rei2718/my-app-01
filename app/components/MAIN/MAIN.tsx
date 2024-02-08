@@ -13,7 +13,7 @@ export default function MAIN() {
   };
   return (
     <>
-      <main id="content" role="main">
+      <main id="content" role="main" className='width: "100vw", height: 100vh'>
         <nav className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
           <div className="grid h-15 max-w-lg grid-cols-5 mx-auto">
             <button
@@ -98,7 +98,7 @@ export default function MAIN() {
           </div>
         </nav>
 
-        <div className="bg-fixed h-screen flex justify-center" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', width: "100", height: '100svh' }}>
+        <div className="bg-fixed h-screen flex justify-center" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
           
           <div className={activeTab === '001' ? 'block' : 'hidden'} id="001">
             PAGE1
