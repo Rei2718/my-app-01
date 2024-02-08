@@ -32,7 +32,7 @@ const Navigation1 = ({
 
   return (
     <>
-        <div className="bg-fixed flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: '100lvh' }}>
+        <div className="bg-fixed flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: '110svh' }}>
           <div className="element">
             <div className="text-brack text-center z-10 text-[#000000]">
 

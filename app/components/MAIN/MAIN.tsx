@@ -98,7 +98,7 @@ export default function MAIN() {
           </div>
         </nav>
 
-        <div className="bg-fixed h-screen flex justify-center" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', width: "100%" }}>
+        <div className="bg-fixed h-screen flex justify-center" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', width: "110svh" }}>
           
           <div className={activeTab === '001' ? 'block' : 'hidden'} id="001">
             PAGE1
