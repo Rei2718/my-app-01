@@ -32,14 +32,14 @@ const Navigation1 = ({
 
   return (
     <>
-        <div className="bg-fixed flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: '110svh' }}>
+        <div className="bg-fixed flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: '1500px' }}>
           <div className="element">
             <div className="text-brack text-center z-10 text-[#000000]">
 
               <Link href="/" className="text-4xl font-bold mb-4">
                   HELLOWOELD
               </Link>
-              <div className="text-lg">welcome back(更新:2024/02/08/21:15)</div>
+              <div className="text-lg">welcome back(更新:2024/02/08/21:30)</div>
 
               <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
                 
