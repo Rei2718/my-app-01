@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import type { Session } from '@supabase/auth-helpers-nextjs'
 import type { Database } from '@/lib/database.types'
 import MAIN from './MAIN/MAIN'
+
 type ProfileType = Database['public']['Tables']['profiles']['Row']
 
 // ナビゲーション
@@ -32,38 +33,34 @@ const Navigation1 = ({
 
   return (
     <>
-        <div style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'top', height: '1500px' }}>
-          <div className="element">
-            <div className="text-brack text-center z-10 text-[#000000]">
-
-              <Link href="/" className="text-4xl font-bold mb-4">
-                  HELLOWOELD
-              </Link>
-              <div className="text-lg">welcome back(更新:2024/02/08/21:31)</div>
-
-              <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
-                
-                <div className="font-bold text-xl cursor-pointer">
-                  {profile && profile.name ? `${profile.name}` : 'HELLO!'}
-                </div>
-
-                <div className="text-sm font-bold">
-                  <div className="flex items-center space-x-5">
-                    <div className="relative w-10 h-10">
-                      <Image
-                        src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
-                        className="rounded-full object-cover"
-                        alt="avatar"
-                        fill
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section style={{ opacity: 1, position: 'relative', height: '100vh', background: `url(user.png)`, backgroundSize: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <div id="bg" style={{ backgroundImage: 'url(girl.jpg)', zIndex: -1, position: 'fixed', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className='w-full flex flex-col items-center object-center'>
+          <Link href="/" className="text-4xl font-bold mb-4">
+            HELLOWOELD
+          </Link>
+          <div className="text-lg">welcome back</div>
+          <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
+            <div className="font-bold text-xl cursor-pointer">
+              {profile && profile.name ? `${profile.name}` : 'HELLO!'}
             </div>
+            <Link href="/settings/profile">
+              <div className="relative w-10 h-10">
+                <Image
+                  src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
+                  className="rounded-full object-cover"
+                  alt="avatar"
+                  fill
+                />
+              </div>
+            </Link>
           </div>
         </div>
-      <MAIN />
+      </section>
+
+      <section style={{ opacity: 1 }}>
+        <MAIN />
+      </section>
     </>
   )
 }

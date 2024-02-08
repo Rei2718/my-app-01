@@ -14,7 +14,7 @@ export default function MAIN() {
   return (
     <>
       <main id="content" role="main">
-        <nav className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
+        <section className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
           <div className="grid h-15 max-w-lg grid-cols-5 mx-auto">
             <button
               data-tooltip-target="tooltip-home"
@@ -96,32 +96,53 @@ export default function MAIN() {
               </div>
             </button>
           </div>
-        </nav>
-
-        <div className="bg-fixed h-screen flex justify-center" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', height: "1500px" }}>
-          
-          <div className={activeTab === '001' ? 'block' : 'hidden'} id="001">
+        </section>
+        
+        <div>
+          <section 
+            id="001"
+            className={activeTab === '001' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
             PAGE1
-          </div>
+          </section>
 
-          <div className={activeTab === '002' ? 'block' : 'hidden'} id="002">
+          <section 
+            id="002"
+            className={activeTab === '002' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
             PAGE2
-          </div>
+          </section>
 
-          <div className={activeTab === '003' ? 'block' : 'hidden'} id="003">
+          <section 
+            id="003"
+            className={activeTab === '003' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
             PAGE3
-          </div>
+          </section>
 
-          <div className={activeTab === '004' ? 'block' : 'hidden'} id="004">
+          <section 
+            id="004"
+            className={activeTab === '004' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
             PAGE4
-          </div>
+          </section>
 
-          <div className={activeTab === '005' ? 'block' : 'hidden'} id="005">
+          <section 
+            id="005"
+            className={activeTab === '005' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            <div className='w-full flex flex-col items-center'>
               <Profile />
               <Password />
               <Logout />
-          </div>
-
+            </div>
+            <div>HELLO</div>
+          </section>
         </div>
       </main>
     </>
