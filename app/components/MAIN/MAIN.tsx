@@ -140,6 +140,9 @@ export default function MAIN() {
               <Profile />
               <Password />
               <Logout />
+              <Profile />
+              <Password />
+              <Logout />
             </div>
             <div>HELLO</div>
           </section>
