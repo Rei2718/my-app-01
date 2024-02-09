@@ -33,7 +33,7 @@ const Home = async () => {
         </div>
         <div>ちょっと今サインアップできない。下のやつでログイン可</div>
             <div>email:once64075796@gmail.com</div>
-            <div>pw:Yrf53563</div>
+            <div>pw:Xps14632718</div>
       </>
     )
   }
