@@ -39,7 +39,7 @@ const Navigation1 = ({
           <Link href="/" className="text-4xl font-bold mb-4">
             HELLOWOELD
           </Link>
-          <div className="text-lg">welcome back(最終更新:02.09/15:10)</div>
+          <div className="text-lg">ログイン時のトップページ(最終更新:02.09/15:10)</div>
           <div className="text-lg">スマホでの使用を想定して開発中</div>
           <div className="grid w-10/12 grid-cols-2 mx-auto pt-10">
             <div className="font-bold text-xl w-full flex flex-col items-center">
