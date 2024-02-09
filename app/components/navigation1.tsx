@@ -34,17 +34,17 @@ const Navigation1 = ({
   return (
     <>
       <section style={{ opacity: 1, position: 'relative', height: '100vh', background: `url(user.png)`, backgroundSize: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <div id="bg" style={{ backgroundImage: 'url(girl.jpg)', zIndex: -1, position: 'fixed', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div id="bg" style={{ backgroundImage: 'url(girl2.gif)', zIndex: -1, position: 'fixed', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className='w-full flex flex-col items-center object-center'>
           <Link href="/" className="text-4xl font-bold mb-4">
             HELLOWOELD
           </Link>
-          <div className="text-lg">welcome back(最終更新(02.09/0:28))</div>
-          <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
-            <div className="font-bold text-xl cursor-pointer">
+          <div className="text-lg">welcome back(最終更新:02.09/15:10)</div>
+          <div className="grid w-10/12 grid-cols-2 mx-auto pt-10">
+            <div className="font-bold text-xl w-full flex flex-col items-center">
               {profile && profile.name ? `${profile.name}` : 'HELLO!'}
             </div>
-            <Link href="/settings/profile">
+            <Link href="/settings/profile" className='w-full flex flex-col items-center'>
               <div className="relative w-10 h-10">
                 <Image
                   src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
