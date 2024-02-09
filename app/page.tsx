@@ -26,14 +26,12 @@ const Home = async () => {
   } else {
     return(
       <>
-        <div>未ログイン</div>
+        <div>(未ログイン時のトップページ)</div>
         <div className="flex items-center space-x-5">
           <Link href="/auth/login">ログイン</Link>
           <Link href="/auth/signup">サインアップ</Link>
         </div>
-        <div>ちょっと今サインアップできない。下のやつでログイン可</div>
-            <div>email:once64075796@gmail.com</div>
-            <div>pw:Xps14632718</div>
+        <div>サインアップ可(2/9.22:30)</div>
       </>
     )
   }
