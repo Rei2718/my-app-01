@@ -32,7 +32,7 @@ const Home = async () => {
           <Link href="/auth/signup">サインアップ</Link>
         </div>
         <div>ちょっと今サインアップできない。下のやつでログイン可</div>
-            <div>email:once2718@gmail.com</div>
+            <div>email:once64075796@gmail.com</div>
             <div>pw:Yrf53563</div>
       </>
     )
