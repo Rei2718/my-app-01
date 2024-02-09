@@ -28,12 +28,12 @@ const Home = async () => {
       <>
         <div>未ログイン</div>
         <div className="flex items-center space-x-5">
-            <Link href="/auth/login">ログイン</Link>
-            <Link href="/auth/signup">サインアップ</Link>
-            <div>ちょっと今サインアップできない。下のやつでログイン可</div>
+          <Link href="/auth/login">ログイン</Link>
+          <Link href="/auth/signup">サインアップ</Link>
+        </div>
+        <div>ちょっと今サインアップできない。下のやつでログイン可</div>
             <div>email:once2718@gmail.com</div>
             <div>pw:Yrf53563</div>
-        </div>
       </>
     )
   }
