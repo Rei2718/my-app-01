@@ -104,7 +104,68 @@ export default function MAIN() {
             className={activeTab === '001' ? 'block' : 'hidden'}
             style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            PAGE1
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ1ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
           </section>
 
           <section 
@@ -112,7 +173,68 @@ export default function MAIN() {
             className={activeTab === '002' ? 'block' : 'hidden'}
             style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            PAGE2
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ2ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
           </section>
 
           <section 
@@ -120,7 +242,68 @@ export default function MAIN() {
             className={activeTab === '003' ? 'block' : 'hidden'}
             style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            PAGE3
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ３ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
           </section>
 
           <section 
@@ -128,7 +311,68 @@ export default function MAIN() {
             className={activeTab === '004' ? 'block' : 'hidden'}
             style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            PAGE4
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ４ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
           </section>
 
           <section 
@@ -140,11 +384,37 @@ export default function MAIN() {
               <Profile />
               <Password />
               <Logout />
-              <Profile />
-              <Password />
-              <Logout />
+              <a>行数稼ぎ５ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
             </div>
-            <div>HELLO</div>
           </section>
         </div>
       </main>
