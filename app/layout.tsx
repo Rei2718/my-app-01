@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </head>
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
+        <div className="font-sans flex flex-col min-h-screen">
           <SupabaseListener2 />
           <main>{children}</main>
         </div>
