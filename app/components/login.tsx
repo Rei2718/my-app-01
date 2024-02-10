@@ -52,7 +52,7 @@ const Login = () => {
         return
       }
 
-      // トップページに遷移
+      // トップページにアクセス
       router.push('/')
     } catch (error) {
       setMessage('エラーが発生しました。' + error)

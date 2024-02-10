@@ -21,17 +21,17 @@ const Home = async () => {
     return(
       <>
         <SupabaseListener1 />
-        <MAIN />
       </>
     )
   } else {
     return(
       <>
-        <div>未ログイン</div>
+        <div>(未ログイン時のトップページ)</div>
         <div className="flex items-center space-x-5">
-            <Link href="/auth/login">ログイン</Link>
-            <Link href="/auth/signup">サインアップ</Link>
+          <Link href="/auth/login">ログイン</Link>
+          <Link href="/auth/signup">サインアップ</Link>
         </div>
+        <div>サインアップ可(2/9.22:30)</div>
       </>
     )
   }

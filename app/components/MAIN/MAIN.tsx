@@ -14,7 +14,7 @@ export default function MAIN() {
   return (
     <>
       <main id="content" role="main">
-        <nav className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
+        <section className="sticky -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 shadow-sm shadow-gray-100 -mt-px" aria-label="Jump links">
           <div className="grid h-15 max-w-lg grid-cols-5 mx-auto">
             <button
               data-tooltip-target="tooltip-home"
@@ -96,32 +96,355 @@ export default function MAIN() {
               </div>
             </button>
           </div>
-        </nav>
+        </section>
+        
+        <div>
+          <section 
+            id="001"
+            className={activeTab === '001' ? 'block' : 'hidden'}
+            style={{ 
+              opacity: 1, 
+              background: "#81d8d0",
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
+          >
 
-        <div className="bg-fixed mx-auto px-4 pb-4 sm:px-6 lg:px-8 min-h-[75rem]" style={{ backgroundImage: 'url("bg_water.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-          
-          <div className={activeTab === '001' ? 'block' : 'hidden'} id="001">
-            PAGE1
-          </div>
+            <div className='w-full flex flex-col items-center'>
+              <a>1ページ目</a>
+              <div className="text-lg">最終更新:02.09/15:10</div>
+              <div className="text-lg">スマホでの使用を想定して開発中</div>
+              <a>背景はティファニー色w</a>
+              <a>2ページ目はグラデーションつけてる↑</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
+          </section>
 
-          <div className={activeTab === '002' ? 'block' : 'hidden'} id="002">
-            PAGE2
-          </div>
+          <section 
+            id="002"
+            className={activeTab === '002' ? 'block' : 'hidden'}
+            style={{ 
+              opacity: 1, 
+              background: 'linear-gradient(to top, #81d8d0, #ffffff)', // グラデーションの色を設定
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
+          >
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ2ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
+          </section>
 
-          <div className={activeTab === '003' ? 'block' : 'hidden'} id="003">
-            PAGE3
-          </div>
+          <section 
+            id="003"
+            className={activeTab === '003' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ３ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
+          </section>
 
-          <div className={activeTab === '004' ? 'block' : 'hidden'} id="004">
-            PAGE4
-          </div>
+          <section 
+            id="004"
+            className={activeTab === '004' ? 'block' : 'hidden'}
+            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            <div className='w-full flex flex-col items-center'>
+              <a>行数稼ぎ４ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
+          </section>
 
-          <div className={activeTab === '005' ? 'block' : 'hidden'} id="005">
+          <section 
+            id="005"
+            className={activeTab === '005' ? 'block' : 'hidden'}
+            style={{ 
+              opacity: 1, 
+              background: "#81d8d0",
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
+          >
+            <div className='w-full flex flex-col items-center'>
               <Profile />
               <Password />
               <Logout />
-          </div>
-
+              <a>行数稼ぎ５ページ目</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+              <a>行数稼ぎ</a>
+            </div>
+          </section>
         </div>
       </main>
     </>

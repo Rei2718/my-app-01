@@ -65,17 +65,21 @@ const Profile = () => {
     const fileSize = files[0]?.size / 1024 / 1024 // size in MB
     const fileType = files[0]?.type // MIME type of the file
 
-    // 画像サイズが2MBを超える場合
-    if (fileSize > 2) {
-      setFileMessage('画像サイズを2MB以下にする必要があります。')
-      return
+    if (fileSize > 2 || (fileType !== 'image/jpeg' && fileType !== 'image/png')) {
+      let message = '';
+      if (fileSize > 2) {
+        message += '画像サイズを2MB以下にする必要があります。';
+      }
+      if (fileType !== 'image/jpeg' && fileType !== 'image/png') {
+        if (message !== '') {
+          message += '\n'; // 既にメッセージがある場合は改行を挿入
+        }
+        message += '画像はjpgまたはpng形式である必要があります。';
+      }
+      setFileMessage(message);
+      return;
     }
-
-    // ファイル形式がjpgまたはpngでない場合
-    if (fileType !== 'image/jpeg' && fileType !== 'image/png') {
-      setFileMessage('画像はjpgまたはpng形式である必要があります。')
-      return
-    }
+    
 
     // 画像をセット
     setAvatar(files[0])
@@ -162,7 +166,7 @@ const Profile = () => {
             className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
             placeholder="Set new User Name"
             id="name"
-            {...register('name', { required: true })}
+            {...register('name', { required: false })}
             required
           />
           <div className="my-3 text-center text-sm text-red-500">{errors.name?.message}</div>
@@ -175,7 +179,7 @@ const Profile = () => {
             className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
             placeholder="Set new Status Message"
             id="introduce"
-            {...register('introduce', { required: true })}
+            {...register('introduce', { required: false })}
             required
           />
           <div className="my-3 text-center text-sm text-red-500">{errors.introduce?.message}</div>
