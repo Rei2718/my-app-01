@@ -33,6 +33,40 @@ const Navigation1 = ({
 
   return (
     <>
+<<<<<<< HEAD
+      <header>
+        <div className="relative bg-fixed h-screen flex items-center justify-center" style={{ backgroundImage: 'url("girl.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+          <div className="element">
+            <div className="relative text-brack text-center z-10 text-[#000000]">
+
+              <Link href="/" className="text-4xl font-bold mb-4">
+                  HELLOWOELD
+              </Link>
+              <div className="text-lg">welcome back</div>
+
+              <div className="py-5 container max-w-screen-sm mx-auto flex items-center justify-between">
+                
+                <div className="font-bold text-xl cursor-pointer">
+                  {profile && profile.name ? `${profile.name}` : 'HELLO!'}
+                </div>
+
+                <div className="text-sm font-bold">
+                  <div className="flex items-center space-x-5">
+                    <Link href="/settings/profile">
+                      <div className="relative w-10 h-10">
+                        <Image
+                          src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
+                          className="rounded-full object-cover"
+                          alt="avatar"
+                          fill
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+=======
     <section>
       <div className="relative bg-fixed h-screen flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className='w-full flex flex-col items-center object-center text-white z-20'>
@@ -62,6 +96,7 @@ const Navigation1 = ({
           
           <div className="font-bold text-xl w-full flex flex-col items-center justify-center py-3" style={{ zIndex: 1 }}>
             {profile && profile.name ? `${profile.name}` : 'HELLO!'}
+>>>>>>> c4f2787a7bb97a0003698d7d92f87658c874a0eb
           </div>
         </div>
       </div>
