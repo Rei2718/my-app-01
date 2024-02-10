@@ -39,15 +39,27 @@ const Navigation1 = ({
           <Link href="/" className="text-4xl font-bold mb-4">
             HELLOWOELD
           </Link>
-          <div className="relative w-full h-full flex items-center justify-center py-3">
-            <Image
-              src={profile && profile.avatar_url ? profile.avatar_url : '/user.jpg'}
-              width={60}
-              height={60}
-              className="rounded-full object-cover"
-              alt="avatar"
-            />
+
+          {/* どんなアスペクト比の画像も円形に切り抜けるように調節 */}
+          <div className="relative w-16 h-16 flex items-center justify-center py-3">
+            <div
+              style={{
+                width: '60px', // 画像の幅
+                height: '60px', // 画像の高さ
+                borderRadius: '50%',
+                overflow: 'hidden',
+              }}
+            >
+              <Image
+                src={profile && profile.avatar_url ? profile.avatar_url : '/img001.jpg'}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                alt="avatar"
+              />
+            </div>
           </div>
+          
           <div className="font-bold text-xl w-full flex flex-col items-center justify-center py-3" style={{ zIndex: 1 }}>
             {profile && profile.name ? `${profile.name}` : 'HELLO!'}
           </div>
