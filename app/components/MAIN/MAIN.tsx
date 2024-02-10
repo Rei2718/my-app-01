@@ -102,16 +102,25 @@ export default function MAIN() {
           <section 
             id="001"
             className={activeTab === '001' ? 'block' : 'hidden'}
-            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ 
+              opacity: 1, 
+              background: "#81d8d0",
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
           >
+
             <div className='w-full flex flex-col items-center'>
-              <a>行数稼ぎ1ページ目</a>
-              <a>行数稼ぎ</a>
-              <a>行数稼ぎ</a>
-              <a>行数稼ぎ</a>
-              <a>行数稼ぎ</a>
-              <a>行数稼ぎ</a>
-              <a>行数稼ぎ</a>
+              <a>1ページ目</a>
+              <div className="text-lg">最終更新:02.09/15:10</div>
+              <div className="text-lg">スマホでの使用を想定して開発中</div>
+              <a>背景はティファニー色w</a>
+              <a>2ページ目はグラデーションつけてる↑</a>
               <a>行数稼ぎ</a>
               <a>行数稼ぎ</a>
               <a>行数稼ぎ</a>
@@ -171,7 +180,17 @@ export default function MAIN() {
           <section 
             id="002"
             className={activeTab === '002' ? 'block' : 'hidden'}
-            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ 
+              opacity: 1, 
+              background: 'linear-gradient(to top, #81d8d0, #ffffff)', // グラデーションの色を設定
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
           >
             <div className='w-full flex flex-col items-center'>
               <a>行数稼ぎ2ページ目</a>
@@ -378,7 +397,17 @@ export default function MAIN() {
           <section 
             id="005"
             className={activeTab === '005' ? 'block' : 'hidden'}
-            style={{ opacity: 1, backgroundImage: 'url(bg_water.jpg)', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ 
+              opacity: 1, 
+              background: "#81d8d0",
+              width: '100%', 
+              height: '100%', 
+              top: 0, 
+              left: 0, 
+              backgroundRepeat: 'no-repeat', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center' 
+            }}
           >
             <div className='w-full flex flex-col items-center'>
               <Profile />

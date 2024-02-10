@@ -33,31 +33,27 @@ const Navigation1 = ({
 
   return (
     <>
-      <section style={{ opacity: 1, position: 'relative', height: '100vh', background: `url(user.png)`, backgroundSize: '2px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <div id="bg" style={{ backgroundImage: 'url(girl2.gif)', zIndex: -1, position: 'fixed', width: '100%', height: '100%', top: 0, left: 0, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        <div className='w-full flex flex-col items-center object-center text-white'>
+    <section>
+      <div className="relative bg-fixed h-screen flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className='w-full flex flex-col items-center object-center text-white z-20'>
           <Link href="/" className="text-4xl font-bold mb-4">
             HELLOWOELD
           </Link>
-          <div className="text-lg">ログイン時のトップページ(最終更新:02.09/15:10)</div>
-          <div className="text-lg">スマホでの使用を想定して開発中</div>
-          <div className="grid w-10/12 grid-cols-2 mx-auto pt-10">
-            <div className="font-bold text-xl w-full flex flex-col items-center">
-              {profile && profile.name ? `${profile.name}` : 'HELLO!'}
-            </div>
-            <Link href="/settings/profile" className='w-full flex flex-col items-center'>
-              <div className="relative w-10 h-10">
-                <Image
-                  src={profile && profile.avatar_url ? profile.avatar_url : '/default.png'}
-                  className="rounded-full object-cover"
-                  alt="avatar"
-                  fill
-                />
-              </div>
-            </Link>
+          <div className="relative w-full h-full flex items-center justify-center py-3">
+            <Image
+              src={profile && profile.avatar_url ? profile.avatar_url : '/user.jpg'}
+              width={60}
+              height={60}
+              className="rounded-full object-cover"
+              alt="avatar"
+            />
+          </div>
+          <div className="font-bold text-xl w-full flex flex-col items-center justify-center py-3" style={{ zIndex: 1 }}>
+            {profile && profile.name ? `${profile.name}` : 'HELLO!'}
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section style={{ opacity: 1 }}>
         <MAIN />
