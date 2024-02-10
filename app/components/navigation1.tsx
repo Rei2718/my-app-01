@@ -36,7 +36,7 @@ const Navigation1 = ({
     <section>
       <div className="relative bg-fixed h-screen flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className='w-full flex flex-col items-center object-center text-white z-20'>
-          <Link href="/" className="text-4xl font-bold mb-4">
+          <Link href="/" className="text-2xl font-bold mb-4">
             Welcome Back
           </Link>
 
