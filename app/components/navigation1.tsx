@@ -60,7 +60,6 @@ const Navigation1 = ({
                       </div>
                     </Link>
                   </div>
-                
                 </div>
               </div>
             </div>
