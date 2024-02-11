@@ -37,7 +37,7 @@ const Navigation1 = ({
         <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
           <div className='w-full flex flex-col items-center object-center text-white z-20'>
 
-            <div className="bg-transparent container mx-auto absolute top-0 left-0 right-0 flex justify-between items-center p-3">
+            <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
               <div className="flex items-center">
                 {/* Header Logo */}
                 <img
@@ -76,7 +76,7 @@ const Navigation1 = ({
               {profile && profile.name ? `${profile.name}` : 'HELLO!'}
             </div>
 
-            <p className='scroll' style={{ zIndex: 1, position: 'absolute', width: "2px", height: "100px", bottom: '10px', left: '50%', transform: 'translateX(-50%)' }}></p>
+            <p className='scroll' style={{ zIndex: 1, position: 'absolute', width: "2px", height: "100px", bottom: '2px', left: '50%', transform: 'translateX(-50%)' }}></p>
 
           </div>
         </div>
