@@ -34,52 +34,52 @@ const Navigation1 = ({
   return (
     <>
       <section>
-        <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
-          <div className='w-full flex flex-col items-center object-center text-white z-20'>
+      <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
+        <div className='w-full flex flex-col items-center object-center text-white z-20'>
 
-            <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
-              <div className="flex items-center">
-                {/* Header Logo */}
-                <img
-                  src="logo.png"
-                  alt="logo"
-                  className="w-12 h-12 bg-transparent"
-                />
-              </div>
+          <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
+            <div className="flex items-center">
+              {/* Header Logo */}
+              <img
+                src="logo.png"
+                alt="logo"
+                className="w-12 h-12 bg-transparent"
+              />
             </div>
-
-            <Link href="/" className="element text-2xl font-bold mb-4">
-              Welcome Back
-            </Link>
-
-            {/* どんなアスペクト比の画像も円形に切り抜けるように調節 */}
-            <div className="relative w-16 h-16 flex items-center justify-center py-3">
-              <div
-                style={{
-                  width: '60px', // 画像の幅
-                  height: '60px', // 画像の高さ
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                }}
-              >
-                <Image
-                  src={profile && profile.avatar_url ? profile.avatar_url : '/img001.jpg'}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-full"
-                  alt="avatar"
-                />
-              </div>
-            </div>
-
-            <div className="element font-bold text-xl w-full flex flex-col items-center justify-center py-3" style={{ zIndex: 1 }}>
-              {profile && profile.name ? `${profile.name}` : 'HELLO!'}
-            </div>
-
-            <p className='scroll' style={{ zIndex: 1, position: 'absolute', width: "2px", height: "100px", bottom: '2px', left: '50%', transform: 'translateX(-50%)' }}></p>
-
           </div>
+
+          <Link href="/" className="element text-2xl font-bold mb-4">
+            Welcome Back
+          </Link>
+
+          {/* どんなアスペクト比の画像も円形に切り抜けるように調節 */}
+          <div className="relative w-16 h-16 flex items-center justify-center py-3">
+            <div
+              style={{
+                width: '60px', // 画像の幅
+                height: '60px', // 画像の高さ
+                borderRadius: '50%',
+                overflow: 'hidden',
+              }}
+            >
+              <Image
+                src={profile && profile.avatar_url ? profile.avatar_url : '/img001.jpg'}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                alt="avatar"
+              />
+            </div>
+          </div>
+
+          <div className="element font-bold text-xl w-full flex flex-col items-center justify-center py-3" style={{ zIndex: 1 }}>
+            {profile && profile.name ? `${profile.name}` : 'HELLO!'}
+          </div>
+
+          <p className='scroll' style={{ zIndex: 1, position: 'absolute', width: "2px", height: "100px", bottom: '2px', left: '50%', transform: 'translateX(-50%)' }}></p>
+
         </div>
+      </div>
       </section>
 
 
