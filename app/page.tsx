@@ -32,7 +32,7 @@ const Home = async () => {
               backgroundImage: 'url("/girl2.gif")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '100vh',
+              height: '100svh',
             }}
           >
             <div className='w-full flex flex-col items-center object-center text-white z-20'>
