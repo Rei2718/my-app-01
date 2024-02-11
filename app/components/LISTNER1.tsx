@@ -3,10 +3,10 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import type { Database } from '@/lib/database.types'
-import Navigation1 from './navigation1'
+import USER from './USER'
 
 // 認証状態の監視
-const SupabaseListener1 = async () => {
+const LISTNER1 = async () => {
   const supabase = createServerComponentClient<Database>({ cookies })
 
   // セッションの取得
@@ -40,7 +40,7 @@ const SupabaseListener1 = async () => {
     }
   }
 
-  return <Navigation1 session={session} profile={profile} />
+  return <USER session={session} profile={profile} />
 }
 
-export default SupabaseListener1
+export default LISTNER1

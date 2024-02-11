@@ -1,4 +1,3 @@
-import SupabaseListener2 from './components/supabase.listner2'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <div className="font-sans flex flex-col min-h-screen">
-          <SupabaseListener2 />
           <main>{children}</main>
         </div>
       </body>

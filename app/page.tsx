@@ -2,8 +2,8 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 
 import type { Database } from '@/lib/database.types'
-import SupabaseListener1 from '@/app/components/supabase-listner1'
 import Link from 'next/link'
+import LISTNER1 from '@/app/components/LISTNER1'
 
 // メインページ
 const Home = async () => {
@@ -19,7 +19,7 @@ const Home = async () => {
   if (session) {
     return (
       <>
-        <SupabaseListener1 />
+        <LISTNER1 />
       </>
     )
   } else {
@@ -32,7 +32,7 @@ const Home = async () => {
               backgroundImage: 'url("/girl2.gif")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '100svh',
+              height: '100lvh',
             }}
           >
             <div className='w-full flex flex-col items-center object-center text-white z-20'>
