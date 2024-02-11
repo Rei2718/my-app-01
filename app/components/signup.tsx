@@ -84,68 +84,90 @@ const Signup = () => {
   }
 
   return (
-    <div className="max-w-[400px] mx-auto">
-      <div className="text-center font-bold text-xl mb-10">サインアップ</div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        {/* 名前 */}
-        <div className="mb-3">
-          <input
-            type="text"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
-            placeholder="名前"
-            id="name"
-            {...register('name', { required: true })}
-          />
-          <div className="my-3 text-center text-sm text-red-500">{errors.name?.message}</div>
+    <>
+      <section>
+        <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("../girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
+          <div className='w-full flex flex-col items-center object-center text-white z-20'>
+            
+            {/* Header Logo */}
+            <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
+              <div className="flex items-center">
+                <img
+                  src="../logo.png"
+                  alt="logo"
+                  className="w-12 h-12 bg-transparent"
+                />
+              </div>
+            </div>
+
+            {/* SingUp */}
+            <div className="max-w-[400px] w-5/6">
+              <div className="text-center font-bold text-xl mb-5">SIGN UP</div>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                {/* nickname */}
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="border rounded-md w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0]"
+                    placeholder="nickname"
+                    id="name"
+                    {...register('name', { required: true })}
+                  />
+                  <div className="my-3 text-center text-sm text-red-500">{errors.name?.message}</div>
+                </div>
+
+                {/* メールアドレス */}
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    className="border rounded-md w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0]"
+                    placeholder="e-mail"
+                    id="email"
+                    {...register('email', { required: true })}
+                  />
+                  <div className="my-3 text-center text-sm text-red-500">{errors.email?.message}</div>
+                </div>
+
+                {/* パスワード */}
+                <div className="mb-5">
+                  <input
+                    type="password"
+                    className="border rounded-md w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0]"
+                    placeholder="password"
+                    id="password"
+                    {...register('password', { required: true })}
+                  />
+                  <div className="my-3 text-center text-sm text-red-500">{errors.password?.message}</div>
+                </div>
+
+                {/* サインアップボタン */}
+                <div className="flex items-center justify-center">
+                  {loading ? (
+                    <Loading />
+                  ) : (
+                    <button
+                      type="submit"
+                      className="w-5/6 mb-5 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-2 focus:shadow-outline"
+                    >
+                      SIGN UP
+                    </button>
+                  )}
+                </div>
+              </form>
+
+              {message && <div className="my-5 text-center text-sm text-red-500">{message}</div>}
+
+              <div className="text-center text-sm">
+                <Link href="/auth/login" className="text-gray-500 font-bold">
+                  ログインはこちら
+                </Link>
+              </div>
+            </div>
+
+          </div>
         </div>
-
-        {/* メールアドレス */}
-        <div className="mb-3">
-          <input
-            type="email"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
-            placeholder="メールアドレス"
-            id="email"
-            {...register('email', { required: true })}
-          />
-          <div className="my-3 text-center text-sm text-red-500">{errors.email?.message}</div>
-        </div>
-
-        {/* パスワード */}
-        <div className="mb-5">
-          <input
-            type="password"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
-            placeholder="パスワード"
-            id="password"
-            {...register('password', { required: true })}
-          />
-          <div className="my-3 text-center text-sm text-red-500">{errors.password?.message}</div>
-        </div>
-
-        {/* サインアップボタン */}
-        <div className="mb-5">
-          {loading ? (
-            <Loading />
-          ) : (
-            <button
-              type="submit"
-              className="font-bold bg-sky-500 hover:brightness-95 w-full rounded-full p-2 text-white text-sm"
-            >
-              サインアップ
-            </button>
-          )}
-        </div>
-      </form>
-
-      {message && <div className="my-5 text-center text-sm text-red-500">{message}</div>}
-
-      <div className="text-center text-sm">
-        <Link href="/auth/login" className="text-gray-500 font-bold">
-          ログインはこちら
-        </Link>
-      </div>
-    </div>
+      </section>
+    </>
   )
 }
 

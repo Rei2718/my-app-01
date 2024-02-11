@@ -26,9 +26,6 @@ const Home = async () => {
   } else {
     return(
       <>
-
-
-
         <section>
           <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
             <div className='w-full flex flex-col items-center object-center text-white z-20'>
@@ -49,10 +46,10 @@ const Home = async () => {
               </Link>
 
               <div className="flex items-center justify-center space-x-6 w-4/5 pt-5">
-                <button className="w-4/5 max-w-xs bg-transparent hover:bg-teal-500 text-teal-500 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded-full focus:outline-none focus:shadow-outline">
+                <button className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline">
                   <Link href="/auth/signup">JOIN</Link>
                 </button>
-                <button className="w-4/5 max-w-xs bg-transparent hover:bg-teal-500 text-teal-500 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded-full focus:outline-none focus:shadow-outline">
+                <button className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline">
                   <Link href="/auth/login">LOGIN</Link>
                 </button>
               </div>
