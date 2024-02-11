@@ -127,7 +127,7 @@ export default function MAIN() {
 
             <div className='w-full flex flex-col items-center'>
               <a>1ページ目</a>
-              <div className="text-lg">最終更新:02.11/17:00</div>
+              <div className="text-lg">最終更新:02.11/17:15</div>
               <div className="text-lg">スマホでの使用を想定して開発中</div>
               <a>行数稼ぎ</a>
               <a>行数稼ぎ</a>
