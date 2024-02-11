@@ -1,9 +1,8 @@
 'use client'
 
-// エラー画面
 const SECTION2 = () => {
   return (
-    <div>
+    <div className="text-white">
       THIS IS SECTION3
     </div>
   )

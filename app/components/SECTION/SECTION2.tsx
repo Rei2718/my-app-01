@@ -1,11 +1,45 @@
 'use client'
 
-// エラー画面
 const SECTION2 = () => {
   return (
-    <div>
-      THIS IS SECTION2
-    </div>
+    <section className="text-white">
+      <div>THIS IS SECTION2</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+      <div>HELLO</div>
+    </section>
   )
 }
 
