@@ -117,7 +117,7 @@ export default function MAIN() {
 
             <div className='w-full flex flex-col items-center'>
               <a>1ページ目</a>
-              <div className="text-lg">最終更新:02.09/15:10</div>
+              <div className="text-lg">最終更新:02.11/14:00</div>
               <div className="text-lg">スマホでの使用を想定して開発中</div>
               <a>背景はティファニー色w</a>
               <a>2ページ目はグラデーションつけてる↑</a>
