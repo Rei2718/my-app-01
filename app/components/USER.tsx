@@ -61,14 +61,14 @@ const USER = ({
                 className={
                   isOpen
                     ? 'z-40 bg-[#81d8d0] text-[#6b7280] fixed top-0 right-0 bottom-0 left-0 h-screen flex flex-col'
-                    : 'fixed right-[-100%] md:right-4'
+                    : 'fixed right-[-100%] md:mx-auto:mx-auto'
                 }
               >
                 <ul
                   className={
                     isOpen
                       ? 'flex h-screen justify-center items-center flex-col gap-6 text-xl'
-                      : 'block md:flex md:gap-8'
+                      : 'block md:mx-auto'
                   }
                 >
                   <li>
@@ -82,7 +82,7 @@ const USER = ({
                   </li>
                 </ul>
               </nav>
-              <button className="z-50 space-y-2 md:hidden" onClick={handleMenuOpen}>
+              <button className="z-50 space-y-2 md:mx-auto:hidden" onClick={handleMenuOpen}>
                 <span
                   className={
                     isOpen
