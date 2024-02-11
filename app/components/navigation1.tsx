@@ -34,7 +34,7 @@ const Navigation1 = ({
   return (
     <>
       <section>
-        <div className="relative bg-fixed h-screen flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
           <div className='w-full flex flex-col items-center object-center text-white z-20'>
 
             <div className="bg-transparent container mx-auto absolute top-0 left-0 right-0 flex justify-between items-center p-3">
