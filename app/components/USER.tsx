@@ -10,6 +10,8 @@ import type { Database } from '@/lib/database.types';
 import SECTION2 from './SECTION/SECTION2';
 import SECTION3 from './SECTION/SECTION3';
 import SECTION1 from './SECTION/SECTION1';
+import Logout from './logout';
+import SECTION4 from './SECTION/SECTION4';
 
 type ProfileType = Database['public']['Tables']['profiles']['Row'];
 
@@ -80,6 +82,9 @@ const USER = ({
                   <li>
                     <a onClick={() => { handleMenuClose(); changeActiveTab('003'); }}>SECTION3</a>
                   </li>
+                  <li>
+                    <a onClick={() => { handleMenuClose(); changeActiveTab('004'); }}>SETTINGS</a>
+                  </li>
                 </ul>
               </nav>
               <button className="z-50 space-y-2 md:mx-auto:hidden" onClick={handleMenuOpen}>
@@ -109,30 +114,22 @@ const USER = ({
       </header>
       <section id='contents'>
         <section id='keyvisual'>
-          <div id='bg'
+          <video
+            src="bg2.mp4"
+            muted
+            autoPlay
+            playsInline
+            loop
             style={{
-              backgroundImage: 'url("/girl2.gif")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              objectFit: 'cover',
+              width: '100vw',
               height: '100vh',
               position: 'fixed',
-              zIndex: -1, // 数値を指定
-              width: '100%',
+              zIndex: -2,
               top: 0,
               left: 0,
-              backgroundRepeat: 'no-repeat', // キャメルケースに修正
             }}
-          >
-            <div
-              style={{
-                backgroundImage: 'url("dot.png")',
-                height: '100vh',
-                position: 'relative',
-                backgroundSize: "2px",
-                opacity: "1",
-              }}
-            ></div>
-          </div>
+          ></video>
         </section>
         <section id='content'>
           <section className={activeTab === '001' ? 'block' : 'hidden'}>
@@ -143,6 +140,9 @@ const USER = ({
           </section>
           <section className={activeTab === '003' ? 'block' : 'hidden'}>
             <SECTION3 />
+          </section>
+          <section className={activeTab === '004' ? 'block' : 'hidden'}>
+            <SECTION4 />
           </section>
         </section>
       </section>

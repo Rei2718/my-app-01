@@ -66,82 +66,102 @@ const Login = () => {
   return (
     <>
       <section>
-      <div className="relative bg-fixed flex items-center justify-center z-10" style={{ backgroundImage: 'url("../girl2.gif")', backgroundSize: 'cover', backgroundPosition: 'center', height: "100svh"}}>
-        <div className='w-full flex flex-col items-center object-center text-white z-20'>
-          
-          {/* Header Logo */}
-          <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
-            <div className="flex items-center">
-              <Link href="/">
-                <img
-                  src="../logo.png"
-                  alt="logo"
-                  className="w-12 h-12 bg-transparent"
-                />
-              </Link>
+        <section id='keyvisual'>
+          <video
+            src="../bg2.mp4"
+            muted
+            autoPlay
+            playsInline
+            loop
+            style={{
+              objectFit: 'cover',
+              width: '100vw',
+              height: '100vh',
+              position: 'fixed',
+              zIndex: -2,
+              top: 0,
+              left: 0,
+            }}
+          ></video>
+        </section>
+        <section>
+          {/* MAIN CONTENT */}
+          <section>
+            <div className='w-screen h-screen flex flex-col justify-center items-center text-white z-20'>
+                {/* Header Logo */}
+                <div className="bg-transparent container absolute top-0 left-0 right-0 flex justify-between items-center p-3">
+                  <div className="flex items-center">
+                    <Link href="/">
+                      <img
+                        src="../logo.png"
+                        alt="logo"
+                        className="w-12 h-12 bg-transparent"
+                      />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Login */}
+                <div className="max-w-[400px] w-5/6">
+                  <div className="text-center font-bold text-xl mb-5">LOGIN</div>
+                  <form onSubmit={handleSubmit(onSubmit)}>
+                    {/* email */}
+                    <div className="mb-3">
+                      <input
+                        type="email"
+                        className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                        placeholder="email"
+                        id="email"
+                        {...register('email', { required: true })}
+                      />
+                      <div className="my-3 text-center text-sm text-[#81d8d0]">{errors.email?.message}</div>
+                    </div>
+
+                    {/* パスワード */}
+                    <div className="mb-5">
+                      <input
+                        type="password"
+                        className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                        placeholder="password"
+                        id="password"
+                        {...register('password', { required: true })}
+                      />
+                      <div className="my-3 text-center text-sm text-[#81d8d0]">{errors.password?.message}</div>
+                    </div>
+
+                    {/* ログインボタン */}
+                    <div className="flex items-center justify-center">
+                      {loading ? (
+                        <Loading />
+                      ) : (
+                        <button
+                          type="submit"
+                          className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
+                        >
+                          LOGIN
+                        </button>
+                      )}
+                    </div>
+                  </form>
+
+                  {message && <div className="my-5 text-center text-sm text-[#81d8d0]">{message}</div>}
+
+                  <div className="text-center text-sm my-5">
+                    <Link href="/auth/reset-password" className="text-[#6b7280] font-bold">
+                      パスワードを忘れた方はこちら
+                    </Link>
+                  </div>
+
+                  <div className="text-center text-sm">
+                    <Link href="/auth/signup" className="text-[#6b7280] font-bold">
+                      アカウントを作成する
+                    </Link>
+                  </div>
+                </div>
+                
             </div>
-          </div>
-
-          {/* Login */}
-          <div className="max-w-[400px] w-5/6">
-            <div className="text-center font-bold text-xl mb-5">LOGIN</div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-              {/* email */}
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-white opacity-90 text-[#6b7280]"
-                  placeholder="email"
-                  id="email"
-                  {...register('email', { required: true })}
-                />
-                <div className="my-3 text-center text-sm text-red-500">{errors.email?.message}</div>
-              </div>
-
-              {/* パスワード */}
-              <div className="mb-5">
-                <input
-                  type="password"
-                  className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-white opacity-90 text-[#6b7280]"
-                  placeholder="password"
-                  id="password"
-                  {...register('password', { required: true })}
-                />
-                <div className="my-3 text-center text-sm text-red-500">{errors.password?.message}</div>
-              </div>
-
-              {/* ログインボタン */}
-              <div className="flex items-center justify-center mb-5">
-                {loading ? (
-                  <Loading />
-                ) : (
-                  <button
-                    type="submit"
-                    className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
-                  >
-                    LOGIN
-                  </button>
-                )}
-              </div>
-            </form>
-
-            {message && <div className="my-5 text-center text-sm text-red-500">{message}</div>}
-
-            <div className="text-center text-sm mb-5">
-              <Link href="/auth/reset-password" className="text-[#6b7280] font-bold">
-                パスワードを忘れた方はこちら
-              </Link>
-            </div>
-
-            <div className="text-center text-sm">
-              <Link href="/auth/signup" className="text-[#6b7280] font-bold">
-                アカウントを作成する
-              </Link>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+          </section>
+        </section>
       </section>
     </>
   )

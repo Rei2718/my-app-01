@@ -51,7 +51,7 @@ const Logout = () => {
               type="submit"
               className="font-bold bg-red-500 hover:brightness-95 w-full rounded-full p-2 text-white text-sm"
             >
-              ログアウト
+              SINGOUT
             </button>
           )}
         </div>

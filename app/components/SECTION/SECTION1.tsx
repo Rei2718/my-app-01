@@ -34,17 +34,17 @@ const SECTION1 = ({
     <section>
       <div className="text-white absolute bottom-0 left-1/2 transform -translate-x-1/2 z-1">
         <div className="w-screen h-screen flex flex-col justify-center items-center">
-          <div className="element text-2xl font-bold my-2">
+          <div className="element text-3xl font-bold my-2">
             <Link legacyBehavior href="/">
               <a>Welcome Back</a>
             </Link>
           </div>
 
-          <div className="relative w-16 h-16 flex items-center justify-center my-2">
+          <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 flex items-center justify-center my-2">
             <div
               style={{
-                width: '60px',
-                height: '60px',
+                width: '100%', // 画像の親コンテナの幅を100%に設定
+                height: '100%', // 画像の親コンテナの高さを100%に設定
                 borderRadius: '50%',
                 overflow: 'hidden',
               }}

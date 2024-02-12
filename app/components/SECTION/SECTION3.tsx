@@ -1,6 +1,6 @@
 'use client'
 
-const SECTION2 = () => {
+const SECTION3 = () => {
   return (
     <div className="text-white">
       THIS IS SECTION3
@@ -8,4 +8,4 @@ const SECTION2 = () => {
   )
 }
 
-export default SECTION2
+export default SECTION3

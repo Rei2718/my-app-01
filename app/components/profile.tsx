@@ -148,61 +148,95 @@ const Profile = () => {
 
   return (
     <>
-      <div className="text-center font-bold text-xl mb-10">プロフィール変更</div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        {/* アバター画像 */}
-        <div className="mb-5">
-          <div className="flex flex-col text-sm items-center justify-center mb-5">
-            <input type="file" id="avatar" onChange={onUploadImage} />
-            {fileMessage && <div className="text-center text-red-500 my-5">{fileMessage}</div>}
-          </div>
-        </div>
+      <section>
+        <div className='relative bg-fixed flex items-center justify-center z-1'>
+          <div className='w-full flex flex-col items-center object-center text-white'>
+          
+            <div className='max-w-[400px] w-5/6'>
+              <div className="text-center font-bold text-3xl mb-10">Settings</div>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                {/* アバター画像 */}
+                <div className="flex items-center justify-center mb-5">
+                  <label htmlFor="avatar" className="relative cursor-pointer">
+                    <div className="w-40 h-40 bg-gray-200 hover:bg-[#81d8d0] rounded-full overflow-hidden">
+                      {/* アップロードされた画像を表示 */}
+                      {avatar ? (
+                        <img
+                          src={URL.createObjectURL(avatar)}
+                          alt="Avatar Preview"
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        // アップロードされた画像がない場合
+                        <span></span>
+                      )}
+                    </div>
+                    <input
+                      type="file"
+                      id="avatar"
+                      onChange={onUploadImage}
+                      className="opacity-0 absolute inset-0"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-5/6 bg-transparent text-[#81d8d0] font-semibold hover:text-[#81d8d0] py-2 px-4 border border-[#81d8d0] rounded-full">
+                        UploadImage
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                {fileMessage && <div className="text-center text-[#81d8d0] my-5">{fileMessage}</div>}
 
-        {/* 名前 */}
-        <div className="mb-5">
-          <div className="text-sm mb-1 font-bold">User Name</div>
-          <input
-            type="text"
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
-            placeholder="Set new User Name"
-            id="name"
-            {...register('name', { required: false })}
-            required
-          />
-          <div className="my-3 text-center text-sm text-red-500">{errors.name?.message}</div>
-        </div>
+                {/* 名前 */}
+                <div className="mb-5">
+                  <div className="text-sm mb-1 font-bold">Username</div>
+                  <input
+                    type="text"
+                    className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                    placeholder="Set your Username"
+                    id="name"
+                    {...register('name', { required: false })}
+                    required
+                  />
+                  <div className="my-3 text-center text-sm text-[#81d8d0]">{errors.name?.message}</div>
+                </div>
 
-        {/* 自己紹介 */}
-        <div className="mb-5">
-          <div className="text-sm mb-1 font-bold">Status Message</div>
-          <textarea
-            className="border rounded-md w-full py-2 px-3 focus:outline-none focus:border-sky-500"
-            placeholder="Set new Status Message"
-            id="introduce"
-            {...register('introduce', { required: false })}
-            required
-          />
-          <div className="my-3 text-center text-sm text-red-500">{errors.introduce?.message}</div>
-        </div>
+                {/* 自己紹介 */}
+                <div className="mb-5">
+                  <div className="text-sm mb-1 font-bold">Status Message</div>
+                  <textarea
+                    className="border rounded-3xl w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                    placeholder="Set your Status Message"
+                    id="introduce"
+                    {...register('introduce', { required: false })}
+                    required
+                  />
+                  <div className="my-3 text-center text-sm text-[#81d8d0]">{errors.introduce?.message}</div>
+                </div>
 
-        {/* 変更ボタン */}
-        <div className="mb-5">
-          {loading ? (
-            <Loading />
-          ) : (
-            <button
-              type="submit"
-              className="font-bold bg-sky-500 hover:brightness-95 w-full rounded-full p-2 text-white text-sm"
-            >
-              変更
-            </button>
-          )}
-        </div>
-      </form>
+                {/* 変更ボタン */}
+                <div className="flex items-center justify-center">
+                  {loading ? (
+                    <Loading />
+                  ) : (
+                    <button
+                      type="submit"
+                      className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
+                    >
+                      Change
+                    </button>
+                  )}
+                </div>
+              </form>
 
-      {/* メッセージ */}
-      {message && <div className="my-5 text-center text-red-500 mb-5">{message}</div>}
+              {/* メッセージ */}
+              {message && <div className="my-5 text-center text-[#81d8d0] mb-5">{message}</div>}
+            </div>
+          </div>  
+
+        </div>
+      </section>
     </>
+
   )
 }
 
