@@ -1,8 +1,6 @@
 'use client'
 
-import Link from 'next/link';
 import useStore from '@/store';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import type { Session } from '@supabase/auth-helpers-nextjs';
 import type { Database } from '@/lib/database.types';
@@ -10,8 +8,8 @@ import type { Database } from '@/lib/database.types';
 import SECTION2 from './SECTION/SECTION2';
 import SECTION3 from './SECTION/SECTION3';
 import SECTION1 from './SECTION/SECTION1';
-import Logout from './logout';
 import SECTION4 from './SECTION/SECTION4';
+import Logout from './logout';
 
 type ProfileType = Database['public']['Tables']['profiles']['Row'];
 
@@ -84,6 +82,9 @@ const USER = ({
                   </li>
                   <li>
                     <a onClick={() => { handleMenuClose(); changeActiveTab('004'); }}>SETTINGS</a>
+                  </li>
+                  <li>
+                    <Logout />
                   </li>
                 </ul>
               </nav>

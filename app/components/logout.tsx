@@ -40,7 +40,6 @@ const Logout = () => {
 
   return (
     <div>
-      <div className="text-center mb-5">ログアウトしますか？</div>
       {/* ログアウトボタン */}
       <form onSubmit={onSubmit}>
         <div className="mb-5">
@@ -49,7 +48,7 @@ const Logout = () => {
           ) : (
             <button
               type="submit"
-              className="font-bold bg-red-500 hover:brightness-95 w-full rounded-full p-2 text-white text-sm"
+              className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white text-sm"
             >
               SINGOUT
             </button>
