@@ -192,7 +192,7 @@ const Profile = () => {
                   <div className="text-sm mb-1 font-bold">Username</div>
                   <input
                     type="text"
-                    className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                    className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                     placeholder="Set your Username"
                     id="name"
                     {...register('name', { required: false })}
@@ -201,11 +201,12 @@ const Profile = () => {
                   <div className="my-3 text-center text-sm text-[#81d8d0]">{errors.name?.message}</div>
                 </div>
 
+
                 {/* 自己紹介 */}
                 <div className="mb-5">
                   <div className="text-sm mb-1 font-bold">Status Message</div>
                   <textarea
-                    className="border rounded-3xl w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                    className="border-2 border-[#81d8d0] rounded-3xl w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                     placeholder="Set your Status Message"
                     id="introduce"
                     {...register('introduce', { required: false })}
@@ -221,7 +222,7 @@ const Profile = () => {
                   ) : (
                     <button
                       type="submit"
-                      className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
+                      className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border-2 border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
                     >
                       Change
                     </button>

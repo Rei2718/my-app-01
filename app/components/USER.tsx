@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import type { Session } from '@supabase/auth-helpers-nextjs';
 import type { Database } from '@/lib/database.types';
 
-import SECTION2 from './SECTION/SECTION2';
+import SECTION2 from './SECTION/SECTION2/SECTION2';
 import SECTION3 from './SECTION/SECTION3';
 import SECTION1 from './SECTION/SECTION1';
 import SECTION4 from './SECTION/SECTION4';
@@ -110,20 +110,20 @@ const USER = ({
                     <span
                       className={
                         isOpen
-                          ? 'block w-8 h-0.5 bg-gray-600 translate-y-2.5 rotate-45 duration-300'
-                          : 'block w-8 h-0.5 bg-gray-600 duration-300'
+                          ? 'block w-8 h-0.5 bg-white translate-y-2.5 rotate-45 duration-300'
+                          : 'block w-8 h-0.5 bg-white duration-300'
                       }
                     />
                     <span
                       className={
-                        isOpen ? 'block opacity-0 duration-300' : 'block w-8 h-0.5 bg-gray-600 duration-300'
+                        isOpen ? 'block opacity-0 duration-300' : 'block w-8 h-0.5 bg-white duration-300'
                       }
                     />
                     <span
                       className={
                         isOpen
-                          ? 'block w-8 h-0.5 bg-gray-600 -rotate-45 duration-300'
-                          : 'block w-8 h-0.5 bg-gray-600 duration-300'
+                          ? 'block w-8 h-0.5 bg-white -rotate-45 duration-300'
+                          : 'block w-8 h-0.5 bg-white duration-300'
                       }
                     />
                   </button>

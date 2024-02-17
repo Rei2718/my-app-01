@@ -48,7 +48,7 @@ const Logout = () => {
           ) : (
             <button
               type="submit"
-              className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white text-sm"
+              className="border-2 rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white text-sm"
             >
               SINGOUT
             </button>

@@ -123,13 +123,13 @@ const Signup = () => {
 
               {/* SingUp */}
               <div className="max-w-[400px] w-5/6">
-                <div className="text-center font-bold text-xl mb-5">SIGN UP</div>
+                <div className="text-center font-bold text-xl mb-10">SIGN UP</div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   {/* nickname */}
                   <div className="mb-3">
                     <input
                       type="text"
-                      className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                      className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                       placeholder="nickname"
                       id="name"
                       {...register('name', { required: true })}
@@ -138,10 +138,10 @@ const Signup = () => {
                   </div>
 
                   {/* email */}
-                  <div className="mb-5">
+                  <div className="mb-3">
                     <input
                       type="email"
-                      className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                      className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                       placeholder="email"
                       id="email"
                       {...register('email', { required: true })}
@@ -150,10 +150,10 @@ const Signup = () => {
                   </div>
 
                   {/* password */}
-                  <div className="mb-5">
+                  <div className="mb-10">
                     <input
                       type="password"
-                      className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white" 
+                      className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white" 
                       placeholder="password"
                       id="password"
                       {...register('password', { required: true })}
@@ -168,7 +168,7 @@ const Signup = () => {
                     ) : (
                       <button
                         type="submit"
-                        className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-2 focus:shadow-outline"
+                        className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border-2 border-[#81d8d0] hover:border-transparent rounded-full focus:outline-2 focus:shadow-outline"
                       >
                         SIGN UP
                       </button>

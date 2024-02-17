@@ -103,13 +103,13 @@ const Login = () => {
 
                 {/* Login */}
                 <div className="max-w-[400px] w-5/6">
-                  <div className="text-center font-bold text-xl mb-5">LOGIN</div>
+                  <div className="text-center font-bold text-xl mb-10">LOGIN</div>
                   <form onSubmit={handleSubmit(onSubmit)}>
                     {/* email */}
                     <div className="mb-3">
                       <input
                         type="email"
-                        className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                        className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                         placeholder="email"
                         id="email"
                         {...register('email', { required: true })}
@@ -118,10 +118,10 @@ const Login = () => {
                     </div>
 
                     {/* パスワード */}
-                    <div className="mb-5">
+                    <div className="mb-10">
                       <input
                         type="password"
-                        className="border rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
+                        className="border-2 border-[#81d8d0] rounded-full w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                         placeholder="password"
                         id="password"
                         {...register('password', { required: true })}
@@ -136,7 +136,7 @@ const Login = () => {
                       ) : (
                         <button
                           type="submit"
-                          className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
+                          className="w-5/6 bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border-2 border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline"
                         >
                           LOGIN
                         </button>
@@ -146,7 +146,7 @@ const Login = () => {
 
                   {message && <div className="my-5 text-center text-sm text-[#81d8d0]">{message}</div>}
 
-                  <div className="text-center text-sm my-5">
+                  <div className="text-center text-sm my-3">
                     <Link href="/auth/reset-password" className="text-[#6b7280] font-bold">
                       パスワードを忘れた方はこちら
                     </Link>

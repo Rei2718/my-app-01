@@ -64,12 +64,12 @@ const Home = async () => {
                   </Link>
 
                   <div className="flex items-center justify-center space-x-6 w-4/5 pt-5">
-                    <Link href="/auth/signup" className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">
+                    <Link href="/auth/signup" className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border-2 border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">
                       <button className=''>
                         JOIN
                       </button>
                     </Link>
-                    <Link href="/auth/login" className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">
+                    <Link href="/auth/login" className="w-4/5 max-w-xs bg-transparent hover:bg-[#81d8d0] text-[#81d8d0] font-semibold hover:text-white py-2 px-4 border-2 border-[#81d8d0] hover:border-transparent rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">
                       <button className=''>
                         LOGIN
                       </button>
