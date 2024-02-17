@@ -13,7 +13,6 @@ import Logout from './logout';
 
 import SplashScreen from './SplashScreen';
 import { usePathname } from 'next/navigation';
-import { path } from "animejs"
 
 type ProfileType = Database['public']['Tables']['profiles']['Row'];
 
@@ -68,10 +67,15 @@ const USER = ({
         <SplashScreen finishLoading={() => setIsLoading(false)} />
       ) : (
         <>
-          <header className="sticky top-0 bg-transparent z-40">
+          <header className="bg-transparent z-40">
             <div className="flex justify-between">
               <div className="py-2 px-2 flex justify-start items-center col-span-1">
-                <img src="logo.png" alt="logo" className="w-12 h-12 bg-transparent" />
+                <img 
+                  src="logo.png" 
+                  alt="logo" 
+                  className="w-12 h-12 bg-transparent"
+                  onClick={() => { handleMenuClose(); changeActiveTab('001'); }}
+                />
               </div>
               <div className="py-2 px-2 flex justify-end items-center col-span-1">
                 <div className="py-2 px-2 flex justify-between items-center">

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import useStore from '@/store';
-import Image from 'next/image';
 import { useEffect } from 'react';
 import type { Session } from '@supabase/auth-helpers-nextjs';
 import type { Database } from '@/lib/database.types';
@@ -49,10 +48,8 @@ const SECTION1 = ({
                 overflow: 'hidden',
               }}
             >
-              <Image
+              <img
                 src={profile ? profile.avatar_url || '/img001.jpg' : '/img001.jpg'}
-                layout="fill"
-                objectFit="cover"
                 className="rounded-full"
                 alt="avatar"
               />

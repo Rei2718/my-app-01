@@ -6,12 +6,10 @@ import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import Image from 'next/image'
 import Loading from '@/app/loading'
 import * as z from 'zod'
 import type { Database } from '@/lib/database.types'
 import useStore from '@/store'
-import Logout from './logout'
 type Schema = z.infer<typeof schema>
 
 // 入力データの検証ルールを定義
@@ -205,7 +203,8 @@ const Profile = () => {
                 {/* 自己紹介 */}
                 <div className="mb-5">
                   <div className="text-sm mb-1 font-bold">Status Message</div>
-                  <textarea
+                  <input
+                    type="text"
                     className="border-2 border-[#81d8d0] rounded-3xl w-full py-2 px-3 focus:outline outline-2 outline-[#81d8d0] bg-transparent text-white"
                     placeholder="Set your Status Message"
                     id="introduce"
